@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Hacker News</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAHDgAADw8AAA+fAAAPnwAAD58AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA48cAAMGDAACBgQAAgAEAAIABAAAAAAAAAYAAAD/8AACX6QAAw8MAAOfvAAD//wAA" rel="icon" type="image/x-icon" />
+    </head>
+	<body>
+        <!-- Nav Bar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Hacker News</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="?type=topstories" data-type="topstories">Top Stories</a>
+                    <a class="nav-item nav-link" href="?type=newstories" data-type="newstories">New</a>
+                    <a class="nav-item nav-link" href="?type=showstories" data-type="showstories">Show</a>
+                    <a class="nav-item nav-link" href="?type=askstories" data-type="askstories">Ask</a>
+                    <a class="nav-item nav-link" href="?type=jobstories" data-type="jobstories">Jobs</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container stories">
+            <header>
+                 <h1 class="stories__title" id="page-title"></h1>
+            </header>
+
+            <main role="main">
+                <section class="list-group" id="stories__container">
+                    <svg width="100px"  height="100px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="stories__loader">
+                        <rect y="30" height="40" fill="#93dbe9" x="15" width="10">
+                            <animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.6s" repeatCount="indefinite"></animate>
+                        </rect>
+                        <rect y="30" height="40" fill="#689cc5" x="35" width="10">
+                            <animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.4s" repeatCount="indefinite"></animate>
+                        </rect>
+                        <rect y="30" height="40" fill="#5e6fa3" x="55" width="10">
+                            <animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate>
+                        </rect>
+                        <rect y="30" height="40" fill="#3b4368" x="75" width="10">
+                            <animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"></animate>
+                        </rect>
+                    </svg>
+                </section>
+                <div class="container navigation">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center mt-3" id="navigation__container"></ul>
+                    </nav>
+                </div>
+            </main>
+		</div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+                integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+                integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+                crossorigin="anonymous"></script>
+	</body>
+</html>
